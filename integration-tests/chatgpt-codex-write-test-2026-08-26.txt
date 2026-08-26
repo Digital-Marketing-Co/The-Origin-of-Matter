@@ -1,0 +1,4 @@
+The Origin of Matter — GitHub write integration test
+Date: 2026-08-26
+Purpose: verify that the newly installed ChatGPT Codex Connector can write repository contents after desktop Codex authorization.
+If this file exists in the repository, write access is operational.
