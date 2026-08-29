@@ -1,0 +1,5 @@
+v400 PDF SHA-256: 94f16d801313ba50ca4f3ef820dcce7ee16da7e90652682b10523c79aa2e41f2
+v400 PDF bytes: 451944
+v400 pages: 12
+Verification: 200-DPI render PASS; PDF preflight PASS; raw LaTeX candidates 0; Unicode replacement glyphs 0.
+Persistent-source note: the exact PDF binary is also retained in the active artifact runtime for this run; this text record is the GitHub reconstruction/provenance anchor until binary archival is independently verified.
