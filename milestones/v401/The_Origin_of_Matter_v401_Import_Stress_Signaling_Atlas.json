@@ -1,0 +1,26 @@
+{
+  "version": "v401",
+  "date": "2026-08-29",
+  "title": "mPOS, UPRam, mitoCPR, DELE1-HRI and Import-Stress Signaling Atlas",
+  "prior": "v400 mtHsp70/PAM, OMA1-DNAJC15 and proteostasis import control",
+  "primary_sources": [
+    {"authors":"Wang X, Chen XJ","journal":"Nature","year":2015,"doi":"10.1038/nature14859","finding":"Defined mitochondrial precursor over-accumulation stress (mPOS) and a cytosolic anti-degenerative network."},
+    {"authors":"Wrobel L et al.","journal":"Nature","year":2015,"doi":"10.1038/nature14951","finding":"Mistargeted mitochondrial precursors trigger UPRam, lowering protein synthesis and increasing proteasomal activity."},
+    {"authors":"Weidberg H, Amon A","journal":"Science","year":2018,"doi":"10.1126/science.aan4146","finding":"mitoCPR induces Cis1; Cis1 recruits Msp1/proteasomal clearance to stalled precursors at mitochondrial translocases."},
+    {"authors":"Guo X et al.","journal":"Nature","year":2020,"doi":"10.1038/s41586-020-2078-2","finding":"OMA1 cleavage of DELE1 releases cytosolic DELE1, activates HRI, eIF2alpha phosphorylation and ATF4."},
+    {"authors":"Fessler E et al.","journal":"Nature","year":2020,"doi":"10.1038/s41586-020-2076-4","finding":"Independent genetic identification of OMA1-DELE1-HRI as a mitochondrial-to-cytosol ISR relay."},
+    {"authors":"Fessler E, Krumwiede L, Jae LT","journal":"Nature Communications","year":2022,"doi":"10.1038/s41467-022-29479-y","finding":"DELE1 senses multiple import/processing defects; OMM import defects can activate HRI via full-length DELE1 without OMA1 cleavage."},
+    {"authors":"Sekine S et al.","journal":"Molecular Cell","year":2023,"finding":"Iron limitation arrests DELE1 import, stabilizes DELE1 at the mitochondrial surface, activates HRI-ISR; imported DELE1 is normally degraded by LONP1."}
+  ],
+  "equations": [
+    "dP_cyt/dt = J_syn,mito - J_import - J_extract - k_deg P_cyt",
+    "Phi_import = J_syn,mito / (J_import + J_extract + k_deg P_cyt + epsilon)",
+    "dCis1/dt = alpha_C S_import - k_C Cis1 ; J_extract = k_Msp1 Cis1 P_stall",
+    "dD_cyt/dt = k_OMA1 A_OMA1 D_transit + k_arrest D_surface - k_clear D_cyt",
+    "A_HRI = D_cyt^n/(K_D^n + D_cyt^n)",
+    "dp_eIF2a/dt = k_HRI A_HRI(1-p_eIF2a) - k_deP p_eIF2a",
+    "J_translation = J0 T(p_eIF2a), with dT/dp_eIF2a < 0 for bulk translation",
+    "X_importStress={P_cyt,P_stall,J_import,J_extract,DELE1,HRI,p-eIF2a,ATF4,proteasome,translation,recovery/death}"
+  ],
+  "evidence_boundary": "Yeast mPOS/UPRam/mitoCPR and mammalian OMA1-DELE1-HRI are not treated as a single conserved molecular pathway. Equations are transparent synthesis models unless explicitly identified as canonical biochemical relations."
+}
