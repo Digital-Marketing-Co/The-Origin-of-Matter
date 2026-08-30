@@ -1,0 +1,24 @@
+{
+  "version": "v402",
+  "title": "Quantitative Precursor-Load Phase Diagram",
+  "status": "conceptual dimensionless model; boundaries are not fitted universal biological thresholds",
+  "core_relations": [
+    "dP/dt = J_syn - C(P,S)",
+    "Phi = J_syn/(J_import + J_extract + J_deg + epsilon)",
+    "dPhi/dt couples translation attenuation, proteasome induction, and import recovery",
+    "R_adapt = k_UPRam + k_ISR + k_mitoCPR; R_fail increases when precursor burden persists beyond adaptive capacity"
+  ],
+  "primary_sources": [
+    "Wang & Chen, Nature 2015, DOI 10.1038/nature14859",
+    "Wrobel et al., Nature 2015, DOI 10.1038/nature14951",
+    "Weidberg & Amon, Science 2018, DOI 10.1126/science.aan4146",
+    "Guo et al., Nature 2020, DOI 10.1038/s41586-020-2078-2",
+    "Fessler et al., Nature 2020, DOI 10.1038/s41586-020-2076-4",
+    "Fessler et al., Nature Communications 2022, DOI 10.1038/s41467-022-29479-y",
+    "Wang et al., iScience 2022, DOI 10.1016/j.isci.2021.103715"
+  ],
+  "cross_reference": "v400 upstream import throttling -> v401 cell-wide import-stress signaling -> v402 load/capacity phase-space synthesis",
+  "pdf_sha256": "7d45fe0294e8b2d22cfd51ab63b72deaa959be7277a3a8e4d06c6ecafeb36e12",
+  "pdf_pages": 3,
+  "preflight": "passed; rendered 3/3 pages at 200 DPI"
+}
